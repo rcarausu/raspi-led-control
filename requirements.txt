@@ -1,1 +1,3 @@
-RPi.GPIO==0.7.0
+#RPi.GPIO==0.7.0 # already installed on the raspberry pi
+flask==1.1.1
+uWSGI==2.0.18

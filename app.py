@@ -1,10 +1,8 @@
 import logging
 from json import dumps
 
-from flask import Flask
 import RPi.GPIO as GPIO
-
-import time
+from flask import Flask
 
 from logger import configure_logging
 
@@ -43,9 +41,9 @@ def pin_off(pin_number):
 
 
 if __name__ == '__main__':
-    configure_logging("/home/rcarausu/", "led_control")
+    configure_logging("/home/robert/", "led_control")
 
     GPIO.setmode(GPIO.BCM)
     GPIO.setwarnings(False)
 
-    app.run()
+    app.run(host="localhost", port=8081)
