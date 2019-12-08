@@ -41,9 +41,9 @@ def pin_off(pin_number):
 
 
 if __name__ == '__main__':
-    configure_logging("/home/robert/", "led_control")
+    configure_logging("/home/rcarausu/", "led_control")
 
     GPIO.setmode(GPIO.BCM)
     GPIO.setwarnings(False)
 
-    app.run(host="localhost", port=8081)
+    app.run(host="0.0.0.0", port=8081, debug=True)
